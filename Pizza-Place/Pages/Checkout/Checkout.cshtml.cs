@@ -32,6 +32,8 @@ namespace Pizza_Place.Pages.Checkout
             {
                 PizzaName = "Custom";
             }
+
+
             if (string.IsNullOrWhiteSpace(ImageTitle))
             {
                 ImageTitle = "Create";
@@ -40,6 +42,7 @@ namespace Pizza_Place.Pages.Checkout
             PizzaOrder pizzaOrder = new PizzaOrder();
             pizzaOrder.PizzaName = PizzaName;
             pizzaOrder.BasePrice = PizzaPrice;
+           
 
             _context.PizzaOrdersCollection.Add(pizzaOrder);
             _context.SaveChanges();
