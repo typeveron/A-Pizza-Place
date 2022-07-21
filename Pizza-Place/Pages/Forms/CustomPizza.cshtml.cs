@@ -26,14 +26,14 @@ namespace Pizza_Place.Pages.Forms
 
             if (Pizza.TomatoSauce) PizzaPrice += 500;
             if (Pizza.Cheese) PizzaPrice += 500;
-            if (Pizza.Peperoini) PizzaPrice += 500;
+            if (Pizza.Pepperoni) PizzaPrice += 500;
             if (Pizza.Mushroom) PizzaPrice += 500;
             if (Pizza.Bacon) PizzaPrice += 500;
             if (Pizza.Pineapple) PizzaPrice += 500;
             if (Pizza.Ham) PizzaPrice += 500;
             if (Pizza.Shrimp) PizzaPrice += 500;
             if (Pizza.Vegeterian) PizzaPrice += 500;
-            if (Pizza.Peperoini) PizzaPrice += 500;
+            if (Pizza.Pepperoni) PizzaPrice += 500;
 
             //Creates an object
             return RedirectToPage("/Checkout/Checkout", new {Pizza.PizzaName, PizzaPrice});
