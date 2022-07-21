@@ -3,7 +3,8 @@ using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
 
-// Add services to the container.
+var enviromentConfiguration = new ConfigurationBuilder().AddEnvironmentVariables().Build();
+
 
 //Add Db Context
 builder.Services.AddDbContext<ApplicationDbContext>(options =>
@@ -22,6 +23,7 @@ if (!app.Environment.IsDevelopment())
     // The default HSTS value is 30 days. You may want to change this for production scenarios, see https://aka.ms/aspnetcore-hsts.
     app.UseHsts();
 }
+
 
 app.UseHttpsRedirection();
 app.UseStaticFiles();

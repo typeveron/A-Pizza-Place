@@ -1,4 +1,4 @@
-﻿{
+{
   "iisSettings": {
     "windowsAuthentication": false,
     "anonymousAuthentication": true,
@@ -10,11 +10,12 @@
   "profiles": {
     "Pizza_Place": {
       "commandName": "Project",
-      "dotnetRunMessages": true,
       "launchBrowser": true,
       "applicationUrl": "https://localhost:7090;http://localhost:5243",
       "environmentVariables": {
-        "ASPNETCORE_ENVIRONMENT": "Development"
+        "ASPNETCORE_ENVIRONMENT": "Development",
+        "SERVER_USERNAME": "sa",
+        "SERVER_PASSWORD": "Pwd59772#"
       }
     },
     "IIS Express": {
@@ -26,5 +27,3 @@
     }
   }
 }
-
-
